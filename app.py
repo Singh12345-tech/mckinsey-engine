@@ -1,0 +1,20 @@
+import streamlit as st
+st.title("McKinsey Research Engine")
+query = st.text_input("Enter topic","EV battery recycling")
+if st.button("Start Research"):
+    st.write("### 1. Planner Agent")
+    st.success("Breaking query into 3 tracks: Market, Competitors, Regulations")
+    st.write("### 2. Browser Agent")
+    st.info("Searching 5 sources...")
+    st.write("### 3. Extractor Agent")
+    st.write("Extracting evidence from sources")
+    st.write("### 4. Validator Agent")
+    st.write("Checking credibility")
+    st.write("### 5. Aggregation Agent")
+    st.write("Grouping insights")
+    st.write("### 6. Memory Agent")
+    st.write("Saving to ChromaDB")
+    st.write("### 7. Reporter Agent")
+    st.write(f"Final Report for {query}: Market is $1.2B [Source: reuters.com]")
+    st.balloons()
+  
