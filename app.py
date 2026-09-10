@@ -11,7 +11,7 @@ if st.button("Start Agentic Research", type="primary"):
     st.subheader("2. Browser Agent - Tavily Search")
     st.info("Searching 5 sources per track with URL and Data filter")
     st.code("tavily.search(query, max_results=5, search_depth='advanced')")
-    st.subheader(""3. Extractor Agent - Evidence Extraction")
+    st.subheader("3. Extractor Agent - Evidence Extraction")
     st.json({"claim": "EV market $1.2B by 2030", "source": "reuters.com", "date": "2024-08-01", "https://reuters.com?..."})
     st.subheader("4. Validator Agent" - 3 Checks")
     st.write("Credibility: reuters.com = Trusted")
